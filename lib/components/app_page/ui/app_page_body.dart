@@ -21,9 +21,8 @@ class _AppPageBodyState extends State<AppPageBody> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           margin: const EdgeInsets.all(16.0),
-          alignment: Alignment.center,
+          alignment: Alignment.topCenter,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text('Widgets go here'),
               ElevatedButton(
@@ -32,10 +31,27 @@ class _AppPageBodyState extends State<AppPageBody> {
                 },
                 child: const Text('Press Me'),
               ),
+              SizedBox(height: 20),
+              const Text('Text Widgets'),
+              ElevatedButton(
+                onPressed: () {
+                  context.goNamed('text_widgets_page');
+                },
+                child: const Text('Press Me'),
+              ),
+              SizedBox(height: 20),
               const Text('List View Page'),
               ElevatedButton(
                 onPressed: () {
                   context.goNamed('list_view_page');
+                },
+                child: const Text('Press Me'),
+              ),
+              SizedBox(height: 20),
+              const Text('Grid View Page'),
+              ElevatedButton(
+                onPressed: () {
+                  context.goNamed('grid_view_page');
                 },
                 child: const Text('Press Me'),
               ),
