@@ -1,5 +1,5 @@
-import 'package:bloc_and_go_router_empty_app/components/bloc/app_bloc.dart';
-import 'package:bloc_and_go_router_empty_app/components/ui/app_page_body.dart';
+import 'package:bloc_and_go_router_empty_app/components/app_page/bloc/app_bloc.dart';
+import 'package:bloc_and_go_router_empty_app/components/app_page/ui/app_page_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
