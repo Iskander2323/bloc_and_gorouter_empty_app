@@ -1,6 +1,6 @@
-import 'package:bloc_and_go_router_empty_app/components/widgets/custom_gesture_detector_main_button.dart';
-import 'package:bloc_and_go_router_empty_app/components/widgets/custom_ink_well_main_button.dart';
-import 'package:bloc_and_go_router_empty_app/components/widgets/custom_text_form_field.dart';
+import 'package:bloc_and_go_router_empty_app/components/widgets/buttons/custom_gesture_detector_main_button.dart';
+import 'package:bloc_and_go_router_empty_app/components/widgets/buttons/custom_ink_well_main_button.dart';
+import 'package:bloc_and_go_router_empty_app/components/widgets/text_fields/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 class WidgetsPage extends StatefulWidget {
