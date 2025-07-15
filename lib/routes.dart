@@ -1,4 +1,5 @@
 import 'package:bloc_and_go_router_empty_app/components/app_page/ui/app_page.dart';
+import 'package:bloc_and_go_router_empty_app/components/pages/animated_widgets_page/animated_widgets/animated_grid_view.dart';
 import 'package:bloc_and_go_router_empty_app/components/pages/animated_widgets_page/animated_widgets/animated_list_1.dart';
 import 'package:bloc_and_go_router_empty_app/components/pages/animated_widgets_page/animated_widgets/animated_list_2.dart';
 import 'package:bloc_and_go_router_empty_app/components/pages/animated_widgets_page/animated_widgets/animated_list_3.dart';
@@ -49,6 +50,7 @@ final GoRouter routes = GoRouter(
             GoRoute(path: 'animated_list_3', name: 'animated_list_3', builder: (context, state) => const AnimatedList3()),
             GoRoute(path: 'animated_list_4', name: 'animated_list_4', builder: (context, state) => const AnimatedList4()),
             GoRoute(path: 'animated_list_5', name: 'animated_list_5', builder: (context, state) => const AnimatedList5()),
+            GoRoute(path: 'animated_grid_view', name: 'animated_grid_view', builder: (context, state) => const AnimatedGridExample()),
           ]
         ),
       ],

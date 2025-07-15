@@ -52,6 +52,13 @@ class AnimatedWidgetsPage extends StatelessWidget {
               },
               child: const Text('Rotation Transition Animated List Widget'),
             ),
+             SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                context.goNamed('animated_grid_view');
+              },
+              child: const Text('Animated Grid View Widget'),
+            ),
           ],
         ),
       ),
