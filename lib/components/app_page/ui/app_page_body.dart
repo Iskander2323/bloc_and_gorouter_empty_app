@@ -55,6 +55,14 @@ class _AppPageBodyState extends State<AppPageBody> {
                 },
                 child: const Text('Press Me'),
               ),
+               SizedBox(height: 20),
+              const Text('Animated Widgets Page'),
+              ElevatedButton(
+                onPressed: () {
+                  context.goNamed('animated_widgets_page');
+                },
+                child: const Text('Press Me'),
+              ),
             ],
           ),
         ),
