@@ -16,6 +16,36 @@ class _AppPageBodyState extends State<AppPageBody> {
       appBar: AppBar(
         title: const Text('App Page'),
         backgroundColor: Colors.green,
+        actions: [
+           PopupMenuButton<String>(
+            icon: const Icon(Icons.more_vert), // you can use any ico
+             shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(20), // Make it more circular
+  ),
+            onSelected: (String value) {
+              
+              // Handle selected value
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text('Selected: $value')),
+              );
+            },
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              const PopupMenuItem<String>(
+
+                value: 'profile',
+                child: Text('Profile'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'settings',
+                child: Text('Settings'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'logout',
+                child: Text('Logout'),
+              ),
+            ],
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -55,11 +85,32 @@ class _AppPageBodyState extends State<AppPageBody> {
                 },
                 child: const Text('Press Me'),
               ),
-               SizedBox(height: 20),
+              SizedBox(height: 20),
               const Text('Animated Widgets Page'),
               ElevatedButton(
                 onPressed: () {
                   context.goNamed('animated_widgets_page');
+                },
+                child: const Text('Press Me'),
+              ),
+              const Text('Scaffold page'),
+              ElevatedButton(
+                onPressed: () {
+                  context.goNamed('scaffold_page');
+                },
+                child: const Text('Press Me'),
+              ),
+               const Text('Custom Scroll View page'),
+              ElevatedButton(
+                onPressed: () {
+                  context.goNamed('custom_scroll_view_example');
+                },
+                child: const Text('Press Me'),
+              ),
+               const Text('Show Case View Guide'),
+              ElevatedButton(
+                onPressed: () {
+                  context.goNamed('show_case_view_page');
                 },
                 child: const Text('Press Me'),
               ),
